@@ -1,5 +1,7 @@
 #Extender 
 
+关键部分：
+
 ./controller/priorities.go
 打分函数。方法上，先生成0到schedulerapi.MaxPriority之间的随机数（包括两端），然后判断当前时间的秒数是否为偶数，是则在先前随机数的基础上加秒数的个位作为最终分数，否则采用最初的随机数作为最终分数。 
 
